@@ -26,12 +26,15 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/q](https://hexdocs.pm/q).
 
-## FAQ
+--->
 
-### Why `q.Q`?
+## (Possibly) FAQ
+
+Because no one knows about this yet, so no one asking questions ;)
+
+### Why `Q.q`?
 It's quick to type and unlikely to cause naming collisions.
 
---->
 
 ## Credit
 

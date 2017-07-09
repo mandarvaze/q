@@ -12,7 +12,9 @@ defmodule Q do
       :world
 
   """
-  def hello do
-    :world
+  def q(msg) do
+    {:ok, file} = File.open '/tmp/q', [:write]
+    IO.write file, "#{msg}\n"
+    File.close file
   end
 end
