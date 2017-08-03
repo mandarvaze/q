@@ -1,15 +1,12 @@
 defmodule Q do
   @moduledoc """
-  Documentation for Q.
+  Quick and dirty debugging output for Elixir programmers
   """
 
   @doc """
-  Hello world.
 
-  ## Examples
-
-      iex> Q.hello
-      :world
+  Use `Q.q` instead of `IO.puts`
+  it is shorter to type and the output is not mixed up with other output on the console, instead it goes to `/tmp/q`
 
   """
   def q(msg) do
