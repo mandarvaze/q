@@ -2,12 +2,13 @@ defmodule Q.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :q,
+    [app: :qq,
      version: "0.1.0",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      description: "Quick and dirty debugging output for elixir programmers.",
+     package: package(),
      deps: deps()]
   end
 

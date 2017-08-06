@@ -6,35 +6,29 @@ Inspired from [similar project](https://github.com/zestyping/q) for python
 
 There is also a golang version [here](https://github.com/y0ssar1an/q)
 
-<!---
-
-Following commented for now, will enable once some version is available on
-hex.pm and hexdocs
-
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `q` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `qq` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:q, "~> 0.1.0"}]
+  [{:qq, "~> 0.1.0"}]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/q](https://hexdocs.pm/q).
-
---->
+Documentation is available on [HexDocs](https://hexdocs.pm/qq/api-reference.html).
 
 ## (Possibly) FAQ
 
-Because no one knows about this yet, so no one asking questions ;)
+Since no one knows about this yet, no one asking questions (yet) ;)
 
 ### Why `Q.q`?
 It's quick to type and unlikely to cause naming collisions.
 
+### Why name the hex package `qq`?
+I started as just `q`, but when publishing, I got an error that the hex package
+must have at least two letters. At first I used `qdbg`, but then switched to
+`qq`
 
 ## Credit
 
