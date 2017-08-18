@@ -2,21 +2,24 @@ defmodule QTest do
   use ExUnit.Case
 #  doctest Q
 
+  @q_file System.tmp_dir() <> "/q"
+
   setup_all do
-    case File.exists? '/tmp/q' do
-      true -> File.rm '/tmp/q'
+    case File.exists? @q_file do
+      true -> File.rm @q_file
       # There must be better way to just ignore if exists? returns false
-      false -> IO.puts "/tmp/q does not exist."
+      false -> IO.puts "#{@q_file} does not exist."
     end
   end
 
   def assertInQLog(msg) do
-    assert File.exists?('/tmp/q') == true
-    {:ok, body} = File.read('/tmp/q')
+    assert File.exists?(@q_file) == true
+    {:ok, body} = File.read(@q_file)
     assert String.contains?(body, msg) == true
   end
 
   test "msg in q log" do
+    require Q
     msg = "Test Message"
     Q.q msg
     assertInQLog msg

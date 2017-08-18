@@ -12,7 +12,7 @@ The package can be installed by adding `qq` to your list of dependencies in `mix
 
 ```elixir
 def deps do
-  [{:qq, "~> 0.1.0"}]
+  [{:qq, "~> 0.1.1"}]
 end
 ```
 
