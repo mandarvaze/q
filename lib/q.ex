@@ -36,7 +36,7 @@ defmodule Q do
   """
   defmacro q(msg) do
     quote do
-      x = "#{inspect __ENV__.module} : #{unquote(msg)}\n"
+      x = "#{inspect __ENV__.module} : #{inspect unquote(msg), pretty: true}\n"
       Q.print_msg(x)
     end
   end

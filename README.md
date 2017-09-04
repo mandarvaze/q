@@ -30,6 +30,16 @@ I started as just `q`, but when publishing, I got an error that the hex package
 must have at least two letters. At first I used `qdbg`, but then switched to
 `qq`
 
+### Why another logger ?
+If you haven't read about the original python project that inspired this package, please do.
+
+TL;DR : Setting up `Logger` is tedious, sometimes you just want to see the values while debugging.
+`Q.q` is already "set" for you. Add `Q.q` statements to your code, and run.
+
+Now go watch the output in `$TMPDIR/q`
+If your log has JSON, then it is pretty printed for better readability.
+
+
 ## Credit
 
 I came across this idea via y0assar1an's golang implementation, which points to
